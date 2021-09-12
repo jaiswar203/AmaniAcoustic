@@ -1,0 +1,140 @@
+@mixin text-color {
+    background: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+.footer{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    background-color: #000000;
+    h3{
+        background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    }
+    &-about-us{
+        // background-color: antiquewhite;
+        width: 25%;
+        p{
+            word-wrap: break-word;
+            padding: 1rem;
+            @include text-color;
+        }
+    }
+    &-contact-info{
+        .address{
+            display: flex;
+
+            i{
+                margin-top: 1rem;
+                background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+                margin-left: 0.3rem;
+            }
+            address{
+                margin-left: 1rem;
+                width: 100%;
+                word-wrap: break-word;
+                font-weight: bold;
+                @include text-color;
+            }
+        }
+        margin-left: 2rem;
+        // background-color: aquamarine;
+        width: 40%;
+
+        .phone{
+            @extend .address;
+            h6{
+                margin-top: 0.8rem;
+                margin-left: 1rem;
+                font-weight: bold;
+                @include text-color;
+            }
+        }
+        .email{
+            @extend .phone;
+        }
+
+        i{
+            font-size: larger;
+        }
+    }
+    &-services{
+        // background-color: azure;
+        width: 25%;
+        margin-left: 2rem;
+
+        ul{
+            list-style: none;
+            column-count: 2;
+            column-gap: 20px;
+
+            li{
+                @include text-color;
+                font-size: large;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.social{
+    display: flex;
+    background-color: black;
+    &-icon{
+        display: flex;
+    
+        i{
+            font-size: 2rem;
+            @include text-color;
+            padding: 4px;
+        }
+    }
+
+    .copyright{
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        &-icon{
+            font-size: 1.5rem;
+            margin-top: -5px;
+            margin-right: 3px;
+            @include text-color;
+        }
+        p{
+            font-size: 1.3rem;
+            @include text-color;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-about-us{
+            width: 95%;
+        }
+        &-contact-info{
+            width: 100%;
+        }
+        &-services{
+            margin-top: 10%;
+            width: 100%;
+        }
+    }
+
+    .social{
+        height: 6.8rem;
+        .copyright{
+            width: 22rem;
+            margin-top: 3rem;
+        }
+    }
+}
