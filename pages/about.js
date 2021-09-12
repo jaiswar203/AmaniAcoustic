@@ -5,7 +5,7 @@ const about = () => {
         <>
             <div className="dropdown">
                 <div className="dropdown-carousel">
-                    <img src="https://lh3.googleusercontent.com/proxy/efaltB4tO5uYMwdKBs74pOtwrfPJcAv0SK1fS4Z1OrmmQBjLlwXfb8I_18kXo8gOVTIn5KoF5MnKzHSapey77Je2AMrZMB3MnEeYzg7e00L5WSQk9QA_2KzNAmT5rYxsTw" alt="" />
+                    <img src="https://s3.amazonaws.com/electronichousesite/wp-content/uploads/2017/08/30160914/MusicStudio5-1000x500.jpg" alt="" />
                     <div className="title">
                         <h3>About Us</h3>
                     </div>
