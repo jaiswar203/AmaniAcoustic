@@ -5,7 +5,7 @@ const Retail = () => {
         <>
              <div className="dropdown">
                 <div className="dropdown-carousel">
-                    <img src="https://lh3.googleusercontent.com/proxy/efaltB4tO5uYMwdKBs74pOtwrfPJcAv0SK1fS4Z1OrmmQBjLlwXfb8I_18kXo8gOVTIn5KoF5MnKzHSapey77Je2AMrZMB3MnEeYzg7e00L5WSQk9QA_2KzNAmT5rYxsTw" alt="" />
+                    <img src="https://www.soundsolutionconsultants.co.uk/app/uploads/2018/10/Retail.jpg" alt="" />
                     <div className="title">
                     <h3>Retail</h3>
                     </div>
